@@ -1,0 +1,179 @@
+.contact {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: $littleTablet + px) {
+            flex-direction: column;
+            height: 464px;
+        }
+        @media screen and (max-width: $phone + px) {
+            height: 854px;
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        width: 976px;
+
+        @media screen and (max-width: $bigTablet + px) {
+            width: 788px;
+        }
+        @media screen and (max-width: $littleTablet + px) {
+            width: 100%;
+        }
+        @media screen and (max-width: $phone + px) {
+            flex-direction: column;
+            height: 744px;
+        }
+
+        &-control {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &:not(:first-child) {
+                margin-top: 32px;
+            }
+            &._success {
+                .contact__form-img._success {
+                    visibility: visible;
+                }
+                .contact__form-inp {
+                    outline-color: $green;
+                }
+            }
+            &._error {
+                .contact__form-img._error {
+                    visibility: visible;
+                }
+                .contact__form-inp {
+                    outline-color: $orangeAccent;
+                }
+                .contact__form-error {
+                    visibility: visible;
+                }
+            }
+        }
+        &-inp {
+            margin-top: 16px;
+            background: none;
+            outline: 4px solid $light;
+            border-radius: 16px;
+            width: 416px;
+            height: 56px;
+            padding: 15px 24px;
+            color: $light;
+            letter-spacing: 0.04em;
+            transition: 0.8s all;
+
+            &::placeholder {
+                color: $light;
+                opacity: 0.72;
+            }
+            &:focus {
+                outline: 4px solid $mintAccent;
+                box-shadow: $mintAccent 0 0 8px 2px;
+            }
+            @media screen and (max-width: $bigTablet + px) {
+                width: 360px;
+            }
+            @media screen and (max-width: $littleTablet + px) {
+                width: 328px;
+            }
+        }
+        &-error {
+            color: $orangeAccent;
+            position: absolute;
+            bottom: -24px;
+            left: 0;
+            visibility: hidden;
+        }
+        &-btn {
+            margin: 40px auto 0;
+            width: 132px;
+            height: 60px;
+            @media screen and (max-width: $phone + px) {
+                margin: 32px auto 0;
+            }
+        }
+    }
+
+    &__form,
+    &__message {
+        &-img {
+            visibility: hidden;
+            position: absolute;
+            top: 56px;
+            right: 16px;
+            height: 32px;
+        }
+        &-img {
+            height: 24px;
+        }
+    }
+
+    &__message {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 0 !important;
+
+        &-inp {
+            height: 216px;
+            @media screen and (max-width: $littleTablet + px) {
+                height: 224px;
+            }
+        }
+
+        &-error {
+            color: $orangeAccent;
+            position: absolute;
+            bottom: 76px;
+            left: 0;
+            visibility: hidden;
+            @media screen and (max-width: $littleTablet + px) {
+                bottom: 70px;
+            }
+        }
+    }
+    &__social {
+        width: 336px;
+        height: 356px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        &-btn {
+            background: $green;
+            &:hover {
+                background: $mintAccent;
+                box-shadow: $mintAccent 0 0 8px 2px;
+            }
+            img {
+                height: 40px;
+            }
+        }
+        @media screen and (max-width: $bigTablet + px) {
+            width: 140px;
+            align-items: flex-end;
+        }
+        @media screen and (max-width: $littleTablet + px) {
+            flex-direction: row;
+            align-items: center;
+            margin: 0 auto;
+            width: 400px;
+            height: 64px;
+            &-btn {
+                img {
+                    height: 32px;
+                }
+            }
+        }
+        @media screen and (max-width: $phone + px) {
+            width: 100%;
+        }
+    }
+}

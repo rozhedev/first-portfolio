@@ -1,0 +1,125 @@
+@mixin titleStyle {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 144%;
+	text-align: center;
+	letter-spacing: 0.06em;
+	margin-bottom: 64px;
+
+	@media screen and (max-width: $bigTablet + px) {
+		font-size: 46px;
+		margin-bottom: 56px;
+	}
+	@media screen and (max-width: $littleTablet + px) {
+		margin-bottom: 48px;
+	}
+	@media screen and (max-width: $phone + px) {
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+@mixin btnStyle {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	background: $orangeAccent;
+	color: $mainColor;
+	border-radius: 16px;
+	padding: 16px;
+	transition: 0.8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:hover {
+		box-shadow: $orangeAccent 0 0 8px 2px;
+	}
+	@media screen and (max-width: $bigTablet + px) {
+		&:hover {
+			box-shadow: none;
+		}
+	}
+	@media screen and (max-width: $littleTablet + px) {
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.04em;
+	}
+}
+
+@mixin subtitleStyle {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: 0.04em;
+	@media screen and (max-width: $bigTablet + px) {
+		font-size: 28px;
+	}
+	@media screen and (max-width: $littleTablet + px) {
+		font-size: 24px;
+	}
+}
+
+@mixin navLinkStyle {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0.04em;
+}
+
+@mixin descrStyle {
+	font-weight: 500;
+	font-size: 18px;
+	// line-height: 144%;
+	line-height: 26px;
+	text-align: justify;
+	letter-spacing: 0.04em;
+}
+
+//Подключение шрифта
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+			url("../fonts/#{$file_name}.woff") format("woff");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+//Адаптивное свойство
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+	$addSize: $startSize - $minSize;
+	@if $type==1 {
+		//Только если меньше контейнера
+		#{$property}: $startSize + px;
+		@media (max-width: #{$maxWidthContainer + px}) {
+			#{$property}: calc(
+				#{$minSize + px} + #{$addSize} * ((100vw - $minWidth) / #{$maxWidthContainer - $minWidth})
+			);
+		}
+	} @else if $type==2 {
+		//Только если больше контейнера
+		#{$property}: $startSize + px;
+		@media (min-width: #{$maxWidthContainer + px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - $minWidth) / #{$maxWidth - $minWidth}));
+		}
+	} @else {
+		//Всегда
+		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - $minWidth) / #{$maxWidth - $minWidth}));
+	}
+}
+//Адаптивное свойство до
+@mixin adaptiv-value-to($property, $startSize, $minSize, $minWidth) {
+	$addSize: $startSize - $minSize;
+	//#{$property}: $minSize + px;
+	@media (min-width: #{$minWidth + px}) {
+		#{$property}: calc(
+			#{$minSize + px} + #{$addSize} * (((100vw - #{$minWidth + px})) / ((#{$maxWidth - $minWidth})))
+		);
+	}
+}

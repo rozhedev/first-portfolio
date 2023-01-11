@@ -1,0 +1,34 @@
+//<DEFAULT FONT>=====================
+$fontFamily: "Raleway";
+$fontSize: 18;
+
+//<MAX & MIN WIDTH>===================
+// Нужны в некоторых миксинах
+$maxWidth: 1440;
+$minWidth: 375;
+
+//<BREAKPOINTS>=============================
+$bigTablet: 1359.98;
+$littleTablet: 959.98;
+$phone: 727.98;
+
+//<CONTAINERS>=============================
+
+// Максимальная ширина контейнера с учетом padding: 0 12px; чтобы контент не прилипал к краям при адаптиве
+// 1312 + 12*2
+
+$xlCont: 1312 + 24;
+$lgCont: 927.98 + 16;
+$mdCont: 695.98 + 16;
+$smCont: 335.98 + 16;
+
+//<COLORS>=============================
+$mainColor: #00143C;
+$light: #F8F8FF;
+$orangeAccent: #FEB058;
+$mintAccent: #00C6C2;
+$green: #00B38A;
+$blue: #005B89;
+
+//<OTHER>=============================
+

@@ -1,0 +1,18 @@
+.footer__copyright {
+    margin: 80px auto 88px;
+    text-align: center;
+
+    @media screen and (max-width: $bigTablet + px) {
+        margin: 72px auto 80px;
+    }
+    @media screen and (max-width: $littleTablet + px) {
+        margin: 64px auto 72px;
+    }
+    @media screen and (max-width: $phone + px) {
+        margin: 56px auto 64px;
+    }
+}
+
+.page-img {
+    width: 100%;
+}

@@ -1,0 +1,126 @@
+// Local variables
+$itemWidthXL: 416px;
+$itemWidthMD: 448px;
+$itemWidthSM: 336px;
+
+.portfolio {
+    &__content {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 32px;
+        justify-items: center;
+
+        @media screen and (max-width: $bigTablet + px) {
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        }
+        @media screen and (max-width: $phone + px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__item {
+        width: $itemWidthXL;
+        border-radius: 16px;
+
+        &:hover {
+            .portfolio__item-hover {
+                opacity: 1;
+                overflow: visible;
+                transition: 0.8s ease;
+            }
+        }
+
+        @media screen and (max-width: $bigTablet + px) {
+            width: $itemWidthMD;
+        }
+        @media screen and (max-width: $littleTablet + px) {
+            width: $itemWidthSM;
+        }
+    }
+    &__item--bg1 {
+        background: url("../img/portfolio/uber.png") center / cover no-repeat;
+        height: $itemWidthXL;
+    }
+    &__item--bg2 {
+        background: url("../img/portfolio/pulse.png") center / cover no-repeat;
+        height: $itemWidthXL * 1.4;
+    }
+    &__item--bg3 {
+        background: url("../img/portfolio/cryptolayer.png") center / cover no-repeat;
+        height: $itemWidthXL * 1.8;
+
+        @media screen and (max-width: $bigTablet + px) {
+            margin-top: -248px;
+        }
+        @media screen and (max-width: $phone + px) {
+            margin-top: 0px;
+        }
+    }
+    &__item--bg4 {
+        background: url("../img/portfolio/hashlang.png") center / cover no-repeat;
+        height: $itemWidthXL * 1.8;
+        margin-top: -333px;
+
+        @media screen and (max-width: $bigTablet + px) {
+            margin-top: -83px;
+        }
+        @media screen and (max-width: $phone + px) {
+            margin-top: 0px;
+        }
+    }
+    &__item--bg5 {
+        background: url("../img/portfolio/sushi-parlour.png") center / cover no-repeat;
+        height: $itemWidthXL * 1.4;
+        margin-top: -167px;
+
+        @media screen and (max-width: $bigTablet + px) {
+            margin-top: -167px;
+        }
+        @media screen and (max-width: $phone + px) {
+            margin-top: 0px;
+        }
+    }
+    &__item--bg6 {
+        background: url("../img/portfolio/marta-up.png") center / cover no-repeat;
+        height: $itemWidthXL;
+    }
+    &__item-hover {
+        opacity: 0;
+        overflow: hidden;
+        background-color: rgba(248, 248, 255, 0.6);
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(8px);
+        color: $mainColor;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item-icon {
+        width: 72px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 40px;
+        }
+
+        @media screen and (max-width: $littleTablet + px) {
+            width: 64px;
+            height: 64px;
+            img {
+                height: 32px;
+            }
+        }
+    }
+    &__item-subtitle {
+        margin-top: 32px;
+    }
+    &__item-descr {
+        margin-top: 8px;
+    }
+}

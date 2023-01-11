@@ -1,0 +1,26 @@
+//<WRAPPER>==================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+//<GRID & CONTAINER>==========================
+._container {
+	max-width: $xlCont + px;
+	margin: 0 auto;
+	padding: 0 12px;
+
+	@media (max-width: $bigTablet + px) {
+		max-width: $lgCont + px;
+		padding: 0 8px;
+	}
+	@media (max-width: $littleTablet + px) {
+		max-width: $mdCont + px;
+	}
+	@media (max-width: $phone + px) {
+		max-width: $smCont + px;
+	}
+}

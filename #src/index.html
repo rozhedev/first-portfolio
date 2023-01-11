@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Bohdan Rozhewsky"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="preloader">
+			<div class="loader"></div>
+		</div>
+
+		@@include('_header.html',{})
+
+		<section class="main" id="main">
+			<div class="page _container">
+				<div class="main__inner">
+					<img src="img/photos/main-avatar.svg" alt="main-avatar" class="main__avatar">
+					<h1 class="main__title">Hi, I’m Bohdan, beginner web developer.<br>
+						I help people with good ideas.</h1>
+					<a href="#" class="main__btn btn header__menu-link" data-goto="#about">
+						Learn More
+						<img src="img/icons/rocket.svg" alt="rocket" class="main__btn-img">
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- About -->
+
+		<section class="about section" id="about">
+			<div class="page _container">
+				<h2 class="title">About Me</h2>
+
+				<div class="about__content">
+					<img src="img/photos/about1.png" alt="about-img" class="about__img">
+					<div class="about__descr descr">
+						<p class="about__descr-item">
+							My name is Bogdan Rozhevsky. I am 18 years old and at this stage of my life I am
+							studying on the 4th course at Sumy Professional College, National University of Food
+							Technologies, specialty of computer engineering.
+						</p>
+						<p class="about__descr-item">
+							I'm a beginner in web applications and website development. I am engaged in design and
+							frontend development of small projects of different orientation.
+						</p>
+						<p class="about__descr-item">
+							I've got some experience working with databases, web-server administration, raster and vector graphics
+							processing in popular editors. Also have a basic knowledge of PHP.
+						</p>
+						<p class="about__descr-item">
+							In the future I would like to devote myself to the development of neural networks.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- * Portfolio -->
+
+		<section class="portfolio section" id="portfolio">
+			<div class="page _container">
+				<h2 class="title">Portfolio</h2>
+
+				<div class="portfolio__content">
+					<div class="portfolio__item portfolio__item--bg1">
+						<div class="portfolio__item-hover">
+							<form action="pages/uber.html">
+								<button class="portfolio__item-icon btn">
+                                    <img src="img/icons/search.svg" alt="search">
+								</button>
+							</form>
+							<h3 class=" portfolio__item-subtitle subtitle">Uber</h3>
+							<div class=" portfolio__item-descr descr">It’s simple landing page for taxi service.
+								Consists of 6 sections and has 3 adaptive versions.</div>
+						</div>
+					</div>
+					<div class="portfolio__item  portfolio__item--bg2">
+						<div class="portfolio__item-hover">
+							<form action="pages/pulse.html">
+								<button class="portfolio__item-icon btn">
+									<img src="img/icons/search.svg" alt="search">
+								</button>
+							</form>
+							<h3 class=" portfolio__item-subtitle subtitle">Pulse</h3>
+							<div class=" portfolio__item-descr descr">It’s the sports watch store page. Consists
+								of 7 sections and has 3 adaptive versions.</div>
+						</div>
+					</div>
+					<div class="portfolio__item portfolio__item--bg3">
+						<div class="portfolio__item-hover">
+							<form action="pages/cryptolayer.html">
+								<button class="portfolio__item-icon btn">
+									<img src="img/icons/search.svg" alt="search">
+								</button>
+							</form>
+							<h3 class=" portfolio__item-subtitle subtitle">Cryptolayer</h3>
+							<div class=" portfolio__item-descr descr">It’s a multi-page corporate website of a
+								company that trades in cryptocurrency and forex markets. Consists of the main
+								page (9 sections) and 2 additional pages. There’s also registration/login form
+								and a user account (6 pages).</div>
+						</div>
+					</div>
+
+					<div class="portfolio__item portfolio__item--bg4">
+						<div class="portfolio__item-hover">
+							<form action="https://www.figma.com/file/nL2IQOvlYokxZap4XPjAUs/Hash-Lang?node-id=0%3A1">
+								<button class="portfolio__item-icon btn">
+									<img src="img/icons/search.svg" alt="search">
+								</button>
+							</form>
+							<h3 class=" portfolio__item-subtitle subtitle">Hashlang</h3>
+							<div class=" portfolio__item-descr descr">It’s a multi-page corporate website of
+								a company that trades in cryptocurrency and forex markets. Consists of the
+								main page (10 sections) and 4 additional pages. There’s also
+								registration/login form and a user account (5 pages).</div>
+						</div>
+					</div>
+					<div class="portfolio__item portfolio__item--bg5">
+						<div class="portfolio__item-hover">
+							<form action="pages/sushi-parlour.html">
+								<button class="portfolio__item-icon btn">
+									<img src="img/icons/search.svg" alt="search">
+								</button>
+							</form>
+							<h3 class=" portfolio__item-subtitle subtitle">Sushi Parlour</h3>
+							<div class=" portfolio__item-descr descr">It’s simple landing page for sushi bar.
+								Consists of 8 sections and has 3 adaptive versions.</div>
+						</div>
+					</div>
+					<div class="portfolio__item portfolio__item--bg6">
+						<div class="portfolio__item-hover">
+							<form action="pages/martaup.html">
+								<button class="portfolio__item-icon btn">
+									<img src="img/icons/search.svg" alt="search">
+								</button>
+							</form>
+							<h3 class=" portfolio__item-subtitle subtitle">MartaUP</h3>
+							<div class=" portfolio__item-descr descr">It’s simple landing page for a company
+								that develops websites and mobile applications. Consists of 4 sections and has 3
+								adaptive versions.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- * Skills -->
+
+		<section class="skills section" id="skills">
+			<div class="page _container">
+				<h2 class="title">My skills</h2>
+
+				<nav class="skills__nav">
+					<div class="subtitle skills__nav-item _active" data-nav="1">Basic technologies</div>
+					<div class="subtitle skills__nav-item" data-nav="2">Programming languages</div>
+					<div class="subtitle skills__nav-item" data-nav="3">Software & other</div>
+				</nav>
+
+				<div class="skills__tab _active" data-tab="1">
+					<div class="skills__tab-item">
+						<img src="img/skills/basic/html5.svg" alt="html5" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">HTML</div>
+							<div class="skills__tab-descr--little-ls descr">I have a good theoretical and
+								practical
+								knowledge. I can create complicated pages using additional technologies.
+							</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+						</div>
+					</div>
+					<div class="skills__tab-item">
+						<img src="img/skills/basic/css3.svg" alt="css3" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">CSS</div>
+							<div class="skills__tab-descr--little-ls descr">I have a good theoretical and
+								practical
+								knowledge. I can
+								create complicated pages using additional technologies.</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+						</div>
+					</div>
+					<div class="skills__tab-item">
+						<img src="img/skills/basic/pug.svg" alt="pug" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">PUG</div>
+							<div class="skills__tab-descr descr">I know the technology pretty well. I use it
+								if
+								necessary.
+								I
+								try to improve my skills in this direction.</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+						</div>
+					</div>
+					<div class="skills__tab-item">
+						<img src="img/skills/basic/sass.svg" alt="sass" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">SASS</div>
+							<div class="skills__tab-descr descr">I have a good theoretical and practical
+								knowledge.
+								Probably
+								not familiar with some of the nuances.</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+						</div>
+					</div>
+				</div>
+
+				<div class="skills__tab" data-tab="2">
+					<div class="skills__tab-item">
+						<img src="img/skills/languages/javascript.svg" alt="javascript" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">JavaScript</div>
+							<div class="skills__tab-descr descr">I have a good theoretical and practical
+								knowledge. I try to improve my skills in this direction. </div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+						</div>
+					</div>
+					<div class="skills__tab-item">
+						<img src="img/skills/languages/php.svg" alt="php" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">PHP</div>
+							<div class="skills__tab-descr descr">I have normal knowledge, but I still
+								need to develop theoretical and practical skills in this language.</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+						</div>
+					</div>
+					<div class="skills__tab-item">
+						<img src="img/skills/languages/python.svg" alt="python" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">Python</div>
+							<div class="skills__tab-descr--little-ls descr">I have a basic knowledge of this
+								language. Can make
+								simple edits to the code and configure applications.</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+						</div>
+					</div>
+				</div>
+
+				<div class="skills__tab" data-tab="3">
+					<div class="skills__tab-item">
+						<img src="img/skills/software/git.svg" alt="git" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">Git</div>
+							<div class="skills__tab-descr--little-ls descr">I have a good theoretical and
+								practical
+								knowledge. I can create complicated pages using additional technologies.
+							</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+						</div>
+					</div>
+					<div class="skills__tab-item">
+						<img src="img/skills/software/gulp.svg" alt="gulp" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">Gulp (and npm)</div>
+							<div class="skills__tab-descr descr">I have a good theoretical and practical
+								knowledge. I try to improve my skills in this direction.</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+						</div>
+					</div>
+					<div class="skills__tab-item">
+						<img src="img/skills/software/figma.svg" alt="figma" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">Figma</div>
+							<div class="skills__tab-descr--ls024 descr">I am good at this program. I can
+								design
+								multi-page
+								sites and web pages and make edits to finished projects.</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+						</div>
+					</div>
+					<div class="skills__tab-item">
+						<img src="img/skills/software/photoshop.svg" alt="sass" class="skills__tab-img">
+						<div class="skills__tab-content">
+							<div class="skills__tab-subtitle subtitle">Photoshop</div>
+							<div class="skills__tab-descr descr">I have a good command of this program. I
+								use it
+								to edit photos and bitmap graphics for different needs.</div>
+						</div>
+						<div class="skills__tab-rating">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-active.svg" alt="star-active" class="skills__tab-star">
+							<img src="img/icons/star-normal.svg" alt="star-normal" class="skills__tab-star">
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!-- * Contact -->
+
+		<section class="contact section" id="contact">
+			<div class="page _container">
+				<h2 class="title">Contacts</h2>
+
+				<div class="contact__content">
+					<form action="#" class="contact__form" id="contact-form">
+						<div class="contact__form-container">
+
+							<div class="contact__form-control">
+								<label for="name" class="contact__form-label navlink">Your full name</label>
+								<input type="text" name="fullname" id="fullname" class="contact__form-inp"
+									placeholder="John Smith">
+
+                                <img src="img/icons/success.svg" alt="success" class="contact__form-img _success">
+                                <!-- _success -->
+                                <img src="img/icons/error.svg" alt="Error" class="contact__form-img _error">
+                                <!-- _error -->
+								<small class="contact__form-error">Error message</small>
+							</div>
+							<div class="contact__form-control">
+								<label for="email" class="contact__form-label navlink">Your email</label>
+								<input type="email" name="email" id="email" class="contact__form-inp"
+									placeholder="john@email.com">
+								<img src="img/icons/success.svg" alt="success" class="contact__form-img _success">
+								<img src="img/icons/error.svg" alt="Error" class="contact__form-img  _error">
+								<small class="contact__form-error">Error message</small>
+							</div>
+							<div class="contact__form-control">
+								<label for="subject" class="contact__form-label navlink">Subject</label>
+								<input type="text" name="subject" id="subject" class="contact__form-inp"
+									placeholder="Some subject">
+								<img src="img/icons/success.svg" alt="success" class="contact__form-img _success">
+								<img src="img/icons/error.svg" alt="Error" class="contact__form-img _error">
+								<small class="contact__form-error">Error message</small>
+							</div>
+						</div>
+
+						<div class="contact__form-control contact__message">
+							<label for="message" class="contact__form-label navlink">Your message</label>
+							<textarea type="text" name="message" id="message"
+								class="contact__form-inp contact__message-inp"
+								placeholder="Write a message..."></textarea>
+							<img src="img/icons/success.svg" alt="success" class="contact__message-img _success">
+							<img src="img/icons/error.svg" alt="Error" class="contact__message-img _error">
+							<small class="contact__form-error contact__message-error">Error message</small>
+							<button class="contact__form-btn btn">SEND</button>
+						</div>
+					</form>
+
+					<div class="contact__social">
+						<form action="https://t.me/lucoon">
+							<button class="portfolio__item-icon contact__social-btn btn">
+                                <img src="img/icons/telegram.svg" alt="telegram" class="contact__social-icon">
+							</button>
+						</form>
+
+						<form action="https://www.instagram.com/invites/contact/?i=1vpzhjoxc36y2&utm_content=n1k3giv">
+							<button class="portfolio__item-icon contact__social-btn btn">
+                                <img src="img/icons/instagram.svg" alt="instagram" class="contact__social-icon">
+							</button>
+						</form>
+
+						<form action="https://viber.click/7380636453644">
+							<button class="portfolio__item-icon contact__social-btn btn">
+                                <img src="img/icons/viber.svg" alt="viber" class="contact__social-icon">
+							</button>
+						</form>
+
+						<form action="https://twitter.com/Digital1479">
+							<button class="portfolio__item-icon contact__social-btn btn">
+                                <img src="img/icons/twitter.svg" alt="twitter" class="contact__social-icon">
+							</button>
+						</form>
+					</div>
+				</div>
+		</section>
+
+		<a href="#" class="contact__social-btn btn top-up" data-goto="#main">
+			<img src="img/icons/up-arrow.svg" alt="up-arrow">
+		</a>
+
+		@@include('_footer.html',{})
+	</div>
+	@@include('_js.html',{})
+</body>
+
+</html>

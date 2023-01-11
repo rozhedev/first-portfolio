@@ -1,0 +1,32 @@
+@use "sass:math";
+
+//<VARIABLES>=======================================
+@import "base/vars.scss";
+
+//<MIXINS>==========================================
+@import "base/mixins.scss";
+
+//<FONTS>===========================================
+//&display=swap&subset=cyrillic-ext
+@import "base/fonts.scss";
+
+//<NULLSTYLE & COMMON STYLES>=======================
+@import "base/null.scss";
+@import "base/common.scss";
+
+//<GRID & CONTAINER>================================
+@import "base/grid.scss";
+
+//<UI & DONE CLASSES>===============================
+@import "base/ui.scss";
+
+//<COMPONENTS>==============================
+@import "components/preloader.scss";
+@import "components/scrollbar.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/main.scss";
+@import "components/about.scss";
+@import "components/portfolio.scss";
+@import "components/skills.scss";
+@import "components/contact.scss";
