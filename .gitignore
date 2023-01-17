@@ -1,10 +1,4 @@
 node_modules
-dist
-src/fonts
-src/img
-package-lock.json
-package.json
-gulpfile.js
 psd
 docs
 debug.log
