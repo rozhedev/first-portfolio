@@ -74,10 +74,9 @@
 @mixin descrStyle {
 	font-weight: 500;
 	font-size: 18px;
-	// line-height: 144%;
 	line-height: 26px;
 	text-align: justify;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.008em;
 }
 
 //Подключение шрифта

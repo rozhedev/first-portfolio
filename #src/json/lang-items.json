@@ -1,0 +1,86 @@
+[
+    {
+        "imgPath": "img/skills/basic/html5.svg",
+        "imgAlt": "html5",
+        "itemTitle": "HTML",
+        "descr": "I have a good theoretical and practical knowledge. I can create complicated pages using additional technologies.",
+
+        "starType1": "img/icons/star-active.svg",
+        "starAlt1": "star-active",
+
+        "starType2": "img/icons/star-active.svg",
+        "starAlt2": "star-active",
+
+        "starType3": "img/icons/star-active.svg",
+        "starAlt3": "star-active",
+
+        "starType4": "img/icons/star-active.svg",
+        "starAlt4": "star-active",
+
+        "starType5": "img/icons/star-active.svg",
+        "starAlt5": "star-active"
+    },
+    {
+        "imgPath": "img/skills/basic/css3.svg",
+        "imgAlt": "css3",
+        "itemTitle": "CSS",
+        "descr": "I have a good theoretical and practical knowledge. I can create complicated pages using additional technologies.",
+
+        "starType1": "img/icons/star-active.svg",
+        "starAlt1": "star-active",
+
+        "starType2": "img/icons/star-active.svg",
+        "starAlt2": "star-active",
+
+        "starType3": "img/icons/star-active.svg",
+        "starAlt3": "star-active",
+
+        "starType4": "img/icons/star-active.svg",
+        "starAlt4": "star-active",
+
+        "starType5": "img/icons/star-active.svg",
+        "starAlt5": "star-active"
+    },
+    {
+        "imgPath": "img/skills/basic/pug.svg",
+        "imgAlt": "pug",
+        "itemTitle": "PUG",
+        "descr": "I know the technology pretty well. I use it if necessary. I try to improve my skills in this direction.",
+
+        "starType1": "img/icons/star-active.svg",
+        "starAlt1": "star-active",
+
+        "starType2": "img/icons/star-active.svg",
+        "starAlt2": "star-active",
+
+        "starType3": "img/icons/star-active.svg",
+        "starAlt3": "star-active",
+
+        "starType4": "img/icons/star-normal.svg",
+        "starAlt4": "star-normal",
+
+        "starType5": "img/icons/star-normal.svg",
+        "starAlt5": "star-normal"
+    },
+    {
+        "imgPath": "img/skills/basic/sass.svg",
+        "imgAlt": "sass",
+        "itemTitle": "SASS",
+        "descr": "I have a good theoretical and practical knowledge. Probably not familiar with some of the nuances.",
+
+        "starType1": "img/icons/star-active.svg",
+        "starAlt1": "star-active",
+
+        "starType2": "img/icons/star-active.svg",
+        "starAlt2": "star-active",
+
+        "starType3": "img/icons/star-active.svg",
+        "starAlt3": "star-active",
+
+        "starType4": "img/icons/star-active.svg",
+        "starAlt4": "star-active",
+
+        "starType5": "img/icons/star-normal.svg",
+        "starAlt5": "star-normal"
+    }
+]

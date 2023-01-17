@@ -1,0 +1,38 @@
+[
+    {
+        "bgNum": "portfolio__item--bg1",
+        "pageLink": "pages/uber.html",
+        "itemTitle": "Uber",
+        "descr": "It’s simple landing page for taxi service. Consists of 6 sections and has 3 adaptive versions."
+    },
+    {
+        "bgNum": "portfolio__item--bg2",
+        "pageLink": "pages/pulse.html",
+        "itemTitle": "Pulse",
+        "descr": "It’s the sports watch store page. Consists of 7 sections and has 3 adaptive versions."
+    },
+    {
+        "bgNum": "portfolio__item--bg3",
+        "pageLink": "pages/cryptolayer.html",
+        "itemTitle": "Cryptolayer",
+        "descr": "It’s a multi-page corporate website of a company that trades in cryptocurrency and forex markets. Consists of the main page (9 sections) and 2 additional pages. There’s also registration/login form and a user account (6 pages)."
+    },
+    {
+        "bgNum": "portfolio__item--bg4",
+        "pageLink": "https://www.figma.com/file/nL2IQOvlYokxZap4XPjAUs/Hash-Lang?node-id=0%3A1",
+        "itemTitle": "Hashlang",
+        "descr": "It’s a multi-page corporate website of a company that trades in cryptocurrency and forex markets. Consists of the main page (10 sections) and 4 additional pages. There’s also registration/login form and a user account (5 pages)."
+    },
+    {
+        "bgNum": "portfolio__item--bg5",
+        "pageLink": "pages/sushi-parlour.html",
+        "itemTitle": "Sushi Parlour",
+        "descr": "It’s simple landing page for sushi bar. Consists of 8 sections and has 3 adaptive versions."
+    },
+    {
+        "bgNum": "portfolio__item--bg6",
+        "pageLink": "pages/martaup.html",
+        "itemTitle": "MartaUP",
+        "descr": "It’s simple landing page for a company that develops websites and mobile applications. Consists of 4 sections and has 3 adaptive versions."
+    }
+]

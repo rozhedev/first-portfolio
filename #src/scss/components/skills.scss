@@ -111,21 +111,7 @@
             text-align: left;
             letter-spacing: 0.06em;
         }
-        &-descr--little-ls {
-            letter-spacing: 0.008em;
-            @media screen and (max-width: $bigTablet + px) {
-                letter-spacing: 0.04em;
-            }
-            @media screen and (max-width: $littleTablet + px) {
-                letter-spacing: 0.008em;
-            }
-        }
-        &-descr--ls024 {
-            letter-spacing: 0.0024em;
-            @media screen and (max-width: $littleTablet + px) {
-                letter-spacing: 0.04em;
-            }
-        }
+        
         &-rating {
             margin: 16px auto 0;
             width: 264px;
