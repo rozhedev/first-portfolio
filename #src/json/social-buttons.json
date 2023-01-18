@@ -1,0 +1,22 @@
+[
+    {
+        "formLink": "https://t.me/lucoon",
+        "imgPath": "img/icons/telegram.svg",
+        "imgAlt": "telegram"
+    },
+    {
+        "formLink": "https://www.instagram.com/invites/contact/?i=1vpzhjoxc36y2&utm_content=n1k3giv",
+        "imgPath": "img/icons/instagram.svg",
+        "imgAlt": "instagram"
+    },
+    {
+        "formLink": "https://viber.click/380636453644",
+        "imgPath": "img/icons/viber.svg",
+        "imgAlt": "viber"
+    },
+    {
+        "formLink": "https://twitter.com/Digital1479",
+        "imgPath": "img/icons/twitter.svg",
+        "imgAlt": "twitter"
+    }
+]

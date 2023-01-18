@@ -151,6 +151,7 @@ window.addEventListener('DOMContentLoaded', function () {
     const subject = document.querySelector('#subject');
     const message = document.querySelector('#message');
     const contactInputs = document.querySelectorAll('.contact__form-inp');
+    let validInterval = 3000;
 
     function checkFullname(fullname) {
         const fullnameValue = fullname.value.trim();
@@ -190,7 +191,7 @@ window.addEventListener('DOMContentLoaded', function () {
         const messageValue = message.value.trim();
 
         if (messageValue === "") {
-            setErrorFor(message, "Subject cannot be blank");
+            setErrorFor(message, "Message cannot be blank");
         } else if (messageValue.length <= 20) {
             setErrorFor(message, 'Message cannot be less than 20 characters');
         } else {
@@ -201,18 +202,18 @@ window.addEventListener('DOMContentLoaded', function () {
     function setErrorFor(input, message) {
         const formControl = input.parentElement;
         const small = formControl.querySelector("small");
-      
+
         formControl.classList.add("_error");
         formControl.classList.remove("_success");
         small.textContent = message;
-      }
-      
-      function setSuccessFor(input) {
+    }
+
+    function setSuccessFor(input) {
         const formControl = input.parentElement;
-      
+
         formControl.classList.remove("_error");
         formControl.classList.add("_success");
-      }
+    }
 
     // * RegEx
 
@@ -229,19 +230,27 @@ window.addEventListener('DOMContentLoaded', function () {
     contactInputs.forEach((currentInputs) => {
         currentInputs.addEventListener("input", function (e) {
             e.preventDefault();
-            e = event.currentTarget;
+            e = e.target;
 
             if (fullName && e == fullName) {
-                setTimeout(function() {checkFullname(fullName);}, 3000);
+                setTimeout(() => {
+                    checkFullname(fullName);
+                }, validInterval);
             }
             if (email && e == email) {
-                setTimeout(function() {checkEmail(email);}, 3000);
+                setTimeout(() => {
+                    checkEmail(email);
+                }, validInterval);
             }
             if (subject && e == subject) {
-                setTimeout(function() {checkSubject(subject);}, 3000);
+                setTimeout(() => {
+                    checkSubject(subject);
+                }, validInterval);
             }
             if (message && e == message) {
-                setTimeout(function() {checkMessage(message)}, 3000);
+                setTimeout(() => {
+                    checkMessage(message)
+                }, validInterval);
             }
         });
     });

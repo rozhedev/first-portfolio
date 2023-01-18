@@ -1,0 +1,86 @@
+[
+    {
+        "imgPath": "img/skills/software/git.svg",
+        "imgAlt": "git",
+        "itemTitle": "Git",
+        "descr": "I have a good theoretical and practical knowledge. I can create complicated pages using additional technologies.",
+
+        "starType1": "img/icons/star-active.svg",
+        "starAlt1": "star-active",
+
+        "starType2": "img/icons/star-active.svg",
+        "starAlt2": "star-active",
+
+        "starType3": "img/icons/star-active.svg",
+        "starAlt3": "star-active",
+
+        "starType4": "img/icons/star-active.svg",
+        "starAlt4": "star-active",
+
+        "starType5": "img/icons/star-normal.svg",
+        "starAlt5": "star-normal"
+    },
+    {
+        "imgPath": "img/skills/software/gulp.svg",
+        "imgAlt": "gulp",
+        "itemTitle": "Gulp (and npm)",
+        "descr": "I have a good theoretical and practical knowledge. I try to improve my skills in this direction.",
+
+        "starType1": "img/icons/star-active.svg",
+        "starAlt1": "star-active",
+
+        "starType2": "img/icons/star-active.svg",
+        "starAlt2": "star-active",
+
+        "starType3": "img/icons/star-active.svg",
+        "starAlt3": "star-active",
+
+        "starType4": "img/icons/star-active.svg",
+        "starAlt4": "star-active",
+
+        "starType5": "img/icons/star-normal.svg",
+        "starAlt5": "star-normal"
+    },
+    {
+        "imgPath": "img/skills/software/figma.svg",
+        "imgAlt": "figma",
+        "itemTitle": "Figma",
+        "descr": "I am good at this program. I can design multipage sites and make edits to finished projects.",
+
+        "starType1": "img/icons/star-active.svg",
+        "starAlt1": "star-active",
+
+        "starType2": "img/icons/star-active.svg",
+        "starAlt2": "star-active",
+
+        "starType3": "img/icons/star-active.svg",
+        "starAlt3": "star-active",
+
+        "starType4": "img/icons/star-active.svg",
+        "starAlt4": "star-active",
+
+        "starType5": "img/icons/star-active.svg",
+        "starAlt5": "star-active"
+    },
+    {
+        "imgPath": "img/skills/software/photoshop.svg",
+        "imgAlt": "photoshop",
+        "itemTitle": "Photoshop",
+        "descr": "I have a good command of this program. I use it to edit photos and bitmap graphics for different needs.",
+
+        "starType1": "img/icons/star-active.svg",
+        "starAlt1": "star-active",
+
+        "starType2": "img/icons/star-active.svg",
+        "starAlt2": "star-active",
+
+        "starType3": "img/icons/star-active.svg",
+        "starAlt3": "star-active",
+
+        "starType4": "img/icons/star-active.svg",
+        "starAlt4": "star-active",
+
+        "starType5": "img/icons/star-normal.svg",
+        "starAlt5": "star-normal"
+    }
+]

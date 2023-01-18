@@ -1,0 +1,20 @@
+[
+    {
+        "id": "fullname",
+        "label": "Your fullname",
+        "type": "text",
+        "placeholder": "John Smith"
+    },
+    {
+        "id": "email",
+        "label": "Your email",
+        "type": "email",
+        "placeholder": "john@email.com"
+    },
+    {
+        "id": "subject",
+        "label": "Subject",
+        "type": "text",
+        "placeholder": "Some subject"
+    }
+]

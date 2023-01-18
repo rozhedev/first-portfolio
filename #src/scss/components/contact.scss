@@ -113,6 +113,7 @@
         }
     }
 
+    // * Message
     &__message {
         display: flex;
         flex-direction: column;
@@ -126,7 +127,6 @@
                 height: 224px;
             }
         }
-
         &-error {
             color: $orangeAccent;
             position: absolute;
@@ -136,6 +136,12 @@
             @media screen and (max-width: $littleTablet + px) {
                 bottom: 70px;
             }
+        }
+        &._error .contact__message-img._error {
+            visibility: visible;
+        }
+        &._success .contact__message-img._success {
+            visibility: visible;
         }
     }
     &__social {

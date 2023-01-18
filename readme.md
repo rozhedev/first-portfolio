@@ -1,6 +1,8 @@
 # Portfolio
 
-My first simple portfolio. [Demo](https://rozhedev.github.io/first-portfolio/)
+My first simple portfolio. It's an overview of my projects at the end of 2021.
+
+Page contains tabs with my skills & contact form with social buttons.
 
 ## Usage
 
@@ -42,11 +44,11 @@ If the project is finished, minify the code and images, use command:
 
 ### Folder structure
 
-**src** - source folder.
+**#src** - source folder.
 
 **dist** - project bundle.
 
-For all files in #src folder, write path as like **from z_dist** folder.
+For all files in #src folder, write path as like **from dist** folder.
 
 ```
 project
@@ -60,7 +62,8 @@ project
 │   └───fonts                     # Fonts in .ttf, .otf format
 |   │   
 |   └───html                      # All .html files
-|   |   └───...
+|   |   └───components            # Components layout (e.g. _news-card.html)
+|   |   └───pages                 # Site pages
 |   |
 │   └───img                       # All images
 |   |   └───...    
